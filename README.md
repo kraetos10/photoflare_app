@@ -13,7 +13,7 @@ A native iOS client for [PhotoPrism](https://photoprism.app) - your self-hosted 
 
 ## Getting Started
 
-1. Download Photoflare from the App Store or TestFlight
+1. Download Photoflare from the App Store or [TestFlight](https://testflight.apple.com/join/MMA6iQDl)
 2. Enter your PhotoPrism server address
 3. Log in with your credentials
 4. Start browsing your photo library
