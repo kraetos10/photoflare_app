@@ -501,8 +501,138 @@ body {
     font-weight: 500;
 }
 
-/* Responsive */
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-text);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .screenshot-item {
+        width: 180px;
+    }
+}
+
+/* Responsive - Mobile */
 @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Mobile Navigation */
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        flex-direction: column;
+        background: var(--color-bg);
+        padding: 80px 32px 32px;
+        gap: 0;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 16px 0;
+        font-size: 18px;
+    }
+
+    .menu-toggle-checkbox:checked ~ nav .nav-links {
+        right: 0;
+    }
+
+    .menu-toggle-checkbox:checked ~ .menu-toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle-checkbox:checked ~ .menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle-checkbox:checked ~ .menu-toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Mobile overlay */
+    .menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .menu-toggle-checkbox:checked ~ .menu-overlay {
+        display: block;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 120px 0 60px;
+    }
+
+    .hero-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 24px;
+        margin-bottom: 24px;
+    }
+
     .hero h1 {
         font-size: 36px;
     }
@@ -513,22 +643,228 @@ body {
 
     .hero .subtitle {
         font-size: 16px;
+        padding: 0 8px;
     }
 
-    .nav-links {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 16px 24px;
+    }
+
+    /* Screenshots */
+    .screenshots {
+        padding: 60px 0;
+    }
+
+    .screenshots h2 {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .screenshot-gallery {
         gap: 16px;
+        padding: 0 8px;
+    }
+
+    .screenshot-item {
+        width: 140px;
+    }
+
+    .screenshot-item p {
+        font-size: 13px;
+    }
+
+    /* Features */
+    .features {
+        padding: 60px 0;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .features .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+        padding: 0 8px;
     }
 
     .features-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .screenshot-item {
-        width: 160px;
+    .feature-card {
+        padding: 24px;
+    }
+
+    .feature-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+        border-radius: 12px;
+    }
+
+    .feature-card h3 {
+        font-size: 18px;
+    }
+
+    .feature-card p,
+    .feature-card ul {
+        font-size: 14px;
+    }
+
+    /* Privacy Banner */
+    .privacy-banner {
+        padding: 60px 0;
+    }
+
+    .privacy-banner h2 {
+        font-size: 26px;
+    }
+
+    .privacy-banner p {
+        font-size: 16px;
+        padding: 0 8px;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 32px 0;
     }
 
     .footer-inner {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-links a {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+    /* Privacy Page */
+    .page-header {
+        padding: 120px 0 40px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .page-header p {
+        font-size: 16px;
+    }
+
+    .page-content {
+        padding: 40px 0;
+    }
+
+    .page-content h2 {
+        font-size: 20px;
+        margin: 32px 0 12px;
+    }
+
+    .page-content p,
+    .page-content ul {
+        font-size: 15px;
+    }
+
+    .highlight-box {
+        padding: 20px;
+        margin: 24px 0;
+    }
+}
+
+/* Responsive - Small Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .header-inner {
+        height: 56px;
+    }
+
+    .logo {
+        font-size: 18px;
+        gap: 10px;
+    }
+
+    .logo-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+    }
+
+    .hero {
+        padding: 100px 0 48px;
+    }
+
+    .hero-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero .tagline {
+        font-size: 18px;
+    }
+
+    .hero .subtitle {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 14px 20px;
+    }
+
+    .screenshot-item {
+        width: 120px;
+    }
+
+    .screenshot-item img {
+        border-radius: 12px;
+    }
+
+    .screenshots h2,
+    .features h2 {
+        font-size: 24px;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .privacy-banner h2 {
+        font-size: 22px;
+    }
+
+    .privacy-banner p {
+        font-size: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 26px;
     }
 }
