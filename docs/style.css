@@ -585,6 +585,18 @@ body {
     opacity: 1;
 }
 
+.roadmap-card.completed {
+    background: rgba(46, 125, 50, 0.05);
+    border-color: rgba(46, 125, 50, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+    .roadmap-card.completed {
+        background: rgba(46, 125, 50, 0.08);
+        border-color: rgba(46, 125, 50, 0.25);
+    }
+}
+
 .roadmap-card-icon {
     width: 56px;
     height: 56px;
