@@ -71,16 +71,22 @@ Photoflare connects directly to YOUR PhotoPrism server. Your photos never pass t
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/library.png" width="200" alt="Library View"/>
-  <img src="screenshots/albums.png" width="200" alt="Albums"/>
-  <img src="screenshots/album-view.png" width="200" alt="Album View"/>
-  <img src="screenshots/photo-detail.png" width="200" alt="Photo Detail"/>
+  <img src="screenshots/library.webp" width="200" alt="Library View"/>
+  <img src="screenshots/albums.webp" width="200" alt="Albums"/>
+  <img src="screenshots/album-view.webp" width="200" alt="Album View"/>
+  <img src="screenshots/photo-detail.webp" width="200" alt="Photo Detail"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/settings.png" width="200" alt="Settings"/>
-  <img src="screenshots/library-settings.png" width="200" alt="Library Settings"/>
-  <img src="screenshots/edit-album.png" width="200" alt="Edit Album"/>
+  <img src="screenshots/collections-dark.webp" width="200" alt="Collections"/>
+  <img src="screenshots/map-light.webp" width="200" alt="Map View"/>
+  <img src="screenshots/photo-menu-dark.webp" width="200" alt="Photo Menu"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/settings.webp" width="200" alt="Settings"/>
+  <img src="screenshots/library-settings.webp" width="200" alt="Library Settings"/>
+  <img src="screenshots/edit-album.webp" width="200" alt="Edit Album"/>
 </p>
 
 ## Getting Started
