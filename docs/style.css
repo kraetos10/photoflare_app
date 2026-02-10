@@ -661,8 +661,8 @@ body {
     }
 
     .roadmap-status.completed {
-        background: rgba(21, 101, 192, 0.2);
-        color: #64B5F6;
+        background: rgba(46, 125, 50, 0.2);
+        color: #81C784;
     }
 }
 
