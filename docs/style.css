@@ -298,6 +298,24 @@ body {
     box-shadow: var(--shadow-card-hover);
 }
 
+.screenshot-item .screenshot-light {
+    display: block;
+}
+
+.screenshot-item .screenshot-dark {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .screenshot-item .screenshot-light {
+        display: none;
+    }
+
+    .screenshot-item .screenshot-dark {
+        display: block;
+    }
+}
+
 .screenshot-item p {
     text-align: center;
     margin-top: 12px;
