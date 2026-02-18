@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photoflare iCloud Sync - Privacy-focused sync that only sends small events, never your photos or personal data.">
+    <title>iCloud Sync - Photoflare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">
+                    <img src="images/app-icon-light.webp" alt="Photoflare" class="icon-light">
+                    <img src="images/app-icon-dark.webp" alt="Photoflare" class="icon-dark">
+                </span>
+                <span>Photoflare</span>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <label for="menu-toggle" class="menu-overlay"></label>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Features</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="https://apps.apple.com/us/app/photoflare/id6502768925" target="_blank">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<section class="page-header">
+    <div class="container">
+        <h1>iCloud Sync</h1>
+        <p>Privacy-focused sync across all your devices</p>
+    </div>
+</section>
+
+<section class="page-content">
+    <div class="container">
+        <div class="highlight-box">
+            <p>We never send your photos or personal data to iCloud. Only small, anonymous events are synced to keep your devices in step.</p>
+        </div>
+
+        <h2>How It Works</h2>
+        <p>When you perform an action on one device — like favouriting a photo, updating an album, or removing an item — Photoflare records a lightweight event. That event is pushed to your private iCloud container, where your other devices pick it up and replay it locally. The result: every device reflects the same state without ever transferring your photos.</p>
+
+        <h2>What We Sync</h2>
+        <p>Only small event payloads that describe what changed — never the content itself. A typical event looks like this:</p>
+        <pre><code>{
+  "event": "photos.updated",
+  "data": {
+    "entities": [
+      { "UID": "ptajmyx4rf5gni6h" }
+    ]
+  }
+}</code></pre>
+        <p>Each event contains an action name and a list of anonymous identifiers. No filenames, no thumbnails, no personal information.</p>
+
+        <h2>What We Don't Sync</h2>
+        <ul>
+            <li>Your photos or videos</li>
+            <li>Photo metadata (EXIF, location, camera info)</li>
+            <li>Server credentials or addresses</li>
+            <li>Any personally identifiable information</li>
+        </ul>
+        <p>Your media stays on your PhotoPrism server and your devices. iCloud only carries the tiny events that tell each device what to refresh.</p>
+
+        <h2>Private iCloud Container</h2>
+        <p>Photoflare uses a private CloudKit container scoped to your Apple ID. This means:</p>
+        <ul>
+            <li>Only your devices can read and write to this container</li>
+            <li>Data is not shared with other users or apps</li>
+            <li>Apple manages encryption in transit and at rest</li>
+            <li>You can inspect or delete this data in iCloud Settings at any time</li>
+        </ul>
+
+        <h2>Why This Exists</h2>
+        <p>PhotoPrism servers don't push real-time sync events to connected clients. When you favourite a photo on your iPhone, your iPad has no way to know about it until the next manual refresh. iCloud Sync bridges that gap — it gives every device a shared, privacy-respecting event stream so your library feels consistent everywhere, without requiring any changes to your server.</p>
+
+        <div class="highlight-box">
+            <p>iCloud Sync is entirely optional. You can disable it at any time in Photoflare's settings, and no data will be written to iCloud.</p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <ul class="footer-links">
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="https://github.com/kraetos10/photoflare_app/issues" target="_blank">Report a Bug</a></li>
+                <li><a href="https://apps.apple.com/us/app/photoflare/id6502768925" target="_blank">App Store</a></li>
+            </ul>
+            <p class="copyright">&copy; 2026 Photoflare. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
