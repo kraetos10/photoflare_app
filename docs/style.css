@@ -365,7 +365,7 @@ body {
 .feature-icon {
     width: 56px;
     height: 56px;
-    background: var(--gradient-hero);
+    background: var(--color-bg-alt);
     border-radius: 14px;
     display: flex;
     align-items: center;
