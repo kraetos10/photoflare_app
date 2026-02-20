@@ -60,152 +60,102 @@
     </div>
 </section>
 
-<!-- Screenshots Section -->
-<section class="screenshots">
-    <div class="container">
-        <h2>See It In Action</h2>
-        <div class="screenshot-gallery">
-            <div class="screenshot-item">
-                <img src="images/library.webp" alt="Library View">
-                <p>Photo Library</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="images/albums.webp" alt="Albums">
-                <p>Albums</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="images/album-view.webp" alt="Album View">
-                <p>Album View</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="images/photo-detail-light.webp" alt="Photo Detail" class="screenshot-light">
-                <img src="images/photo-detail-dark.webp" alt="Photo Detail" class="screenshot-dark">
-                <p>Photo Detail</p>
-            </div>
+<!-- Spotlight: Browse & Discover -->
+<section class="spotlight" id="features">
+    <div class="spotlight-inner spotlight-image-left">
+        <div class="spotlight-media">
+            <img src="images/library.webp" alt="Photo Library" class="spotlight-screenshot">
+        </div>
+        <div class="spotlight-content">
+            <h2>Browse &amp; Discover</h2>
+            <p class="spotlight-lead">Explore your entire photo library in a stunning, responsive grid with smooth scrolling through thousands of images.</p>
+            <ul class="spotlight-features">
+                <li><strong>Full media support</strong> — photos, videos, and Live Photos with native playback</li>
+                <li><strong>Smooth zoom</strong> — pinch to view full-resolution details</li>
+                <li><strong>Photo metadata</strong> — camera info, lens data, location, and more</li>
+                <li><strong>Intelligent caching</strong> — thumbnails load instantly, even on slow connections</li>
+            </ul>
         </div>
     </div>
 </section>
 
-<!-- Features Section -->
-<section class="features" id="features">
+<!-- Spotlight: Organize Your Way -->
+<section class="spotlight spotlight-alt">
+    <div class="spotlight-inner spotlight-image-right">
+        <div class="spotlight-media">
+            <img src="images/collections-light.webp" alt="Collections" class="spotlight-screenshot screenshot-light">
+            <img src="images/collections-dark.webp" alt="Collections" class="spotlight-screenshot screenshot-dark">
+        </div>
+        <div class="spotlight-content">
+            <h2>Organize Your Way</h2>
+            <p class="spotlight-lead">Create, edit, and manage albums directly from your device. Everything you need to keep your library tidy.</p>
+            <ul class="spotlight-features">
+                <li><strong>Album management</strong> — create, rename, and organize collections on the go</li>
+                <li><strong>Favourites</strong> — mark your best shots for quick access</li>
+                <li><strong>Bulk actions</strong> — multi-select photos to delete or add to albums</li>
+                <li><strong>Map browsing</strong> — explore photos on an interactive map by location</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Spotlight: Privacy First -->
+<section class="spotlight">
+    <div class="spotlight-inner spotlight-image-left">
+        <div class="spotlight-media">
+            <img src="images/collections-private-light.webp" alt="Private Collections" class="spotlight-screenshot screenshot-light">
+            <img src="images/collections-private-dark.webp" alt="Private Collections" class="spotlight-screenshot screenshot-dark">
+        </div>
+        <div class="spotlight-content">
+            <h2>Privacy First</h2>
+            <p class="spotlight-lead">Your photos stay on your server. Photoflare never routes data through third-party services.</p>
+            <ul class="spotlight-features">
+                <li><strong>Private items</strong> — hide sensitive photos from your main library</li>
+                <li><strong>2FA &amp; OIDC</strong> — two-factor authentication and OpenID Connect support</li>
+                <li><strong>SSL/TLS</strong> — all connections are encrypted end-to-end</li>
+                <li><strong>No third-party servers</strong> — your data never leaves your infrastructure</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Spotlight: Stay In Sync -->
+<section class="spotlight spotlight-alt">
+    <div class="spotlight-inner spotlight-image-right">
+        <div class="spotlight-media">
+            <img src="images/settings.webp" alt="Settings" class="spotlight-screenshot">
+        </div>
+        <div class="spotlight-content">
+            <h2>Stay In Sync</h2>
+            <p class="spotlight-lead">Your library is always up to date — across devices and in the background.</p>
+            <ul class="spotlight-features">
+                <li><strong>WebSocket real-time</strong> — new photos appear instantly as they're added to your server</li>
+                <li><strong>Background photo upload</strong> — automatically sync photos from your device</li>
+                <li><strong>iCloud events</strong> — keep all your devices in sync with small, anonymous events. <a href="icloud-sync.html">Learn more</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Grouped Grid: And More -->
+<section class="feature-group">
     <div class="container">
-        <h2>Powerful Features</h2>
-        <p class="section-subtitle">Everything you need to access your PhotoPrism library on the go</p>
-
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-screenshot">
-                    <img src="images/library.webp" alt="Library View">
-                </div>
-                <h3>Browse Your Entire Library</h3>
-                <p>Explore your photos and videos in a stunning, responsive grid that adapts to any screen size. Enjoy smooth scrolling through thousands of images with intelligent thumbnail caching.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-screenshot">
-                    <img src="images/photo-detail-light.webp" alt="Photo Detail" class="screenshot-light">
-                    <img src="images/photo-detail-dark.webp" alt="Photo Detail" class="screenshot-dark">
-                </div>
-                <h3>Full Media Support</h3>
-                <p>View all your media types with native support:</p>
-                <ul>
-                    <li>Photos in full resolution with smooth zoom</li>
-                    <li>Videos with built-in player and native controls</li>
-                    <li>Live Photos with full playback support</li>
-                </ul>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-screenshot">
-                    <img src="images/albums.webp" alt="Albums">
-                </div>
-                <h3>Album Management</h3>
-                <p>Create, edit, and organize albums directly from your device. Browse existing collections, add photos to albums.</p>
-            </div>
-
+        <h2>And More</h2>
+        <div class="feature-group-grid">
             <div class="feature-card">
                 <div class="feature-icon">&#11014;&#65039;</div>
                 <h3>Easy Uploads</h3>
-                <p>Upload photos and videos directly to your PhotoPrism server. Select from your photo library or import files, with real-time progress tracking and automatic album assignment.</p>
+                <p>Upload photos and videos directly to your PhotoPrism server with real-time progress tracking and automatic album assignment.</p>
             </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">&#128274;</div>
-                <h3>Secure Authentication</h3>
-                <p>Multiple secure authentication options:</p>
-                <ul>
-                    <li>Username &amp; password login</li>
-                    <li>Two-factor authentication (2FA/OTP)</li>
-                    <li>OpenID Connect (OIDC) support</li>
-                    <li>Secure SSL/TLS connections</li>
-                </ul>
-            </div>
-
             <div class="feature-card">
                 <div class="feature-icon">&#128244;</div>
                 <h3>Offline Mode</h3>
-                <p>Download your photos for offline access. View your library anywhere, even without an internet connection. Smart caching keeps your favorites ready when you need them.</p>
+                <p>Download photos for offline access. Smart caching keeps your favourites ready even without an internet connection.</p>
             </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">&#128260;</div>
-                <h3>Seamless Sync</h3>
-                <p>Real-time synchronization keeps your library up-to-date via WebSocket connection. See new photos appear instantly as they're added to your server.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-screenshot">
-                    <img src="images/collections-private-light.webp" alt="Private Collections" class="screenshot-light">
-                    <img src="images/collections-private-dark.webp" alt="Private Collections" class="screenshot-dark">
-                </div>
-                <h3>Private Photos</h3>
-                <p>Keep your sensitive photos secure with Private Photos support. Private items are hidden from your main library and protected from prying eyes.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">&#10084;&#65039;</div>
-                <h3>Favourites</h3>
-                <p>Mark your best shots as favourites for quick access and browse them all in a dedicated collection.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">&#9745;&#65039;</div>
-                <h3>Multi-Select</h3>
-                <p>Select multiple photos for bulk actions like delete or add to albums.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">&#128506;</div>
-                <h3>Map Collections</h3>
-                <p>Explore your photos on an interactive map and browse collections by location.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">&#128247;</div>
-                <h3>Photo Details</h3>
-                <p>View camera info, lens data, location, and more from the photo viewer.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">&#128260;</div>
-                <h3>Photo Sync</h3>
-                <p>Automatically sync photos from your device to your PhotoPrism server in the background. Your library stays up to date without lifting a finger.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">&#9729;&#65039;</div>
-                <h3>iCloud Sync</h3>
-                <p>Keep all your devices in sync via iCloud. We only sync small, anonymous events — never your photos or personal data. <a href="icloud-sync.html">Learn more</a>.</p>
-            </div>
-
             <div class="feature-card">
                 <div class="feature-icon">&#127912;</div>
                 <h3>Beautiful Design</h3>
-                <p>A native experience built with care:</p>
-                <ul>
-                    <li>Full Dark Mode support</li>
-                    <li>Haptic feedback for tactile interactions</li>
-                </ul>
+                <p>A native iOS experience with full Dark Mode support and haptic feedback for tactile interactions.</p>
             </div>
         </div>
     </div>
@@ -216,47 +166,6 @@
     <div class="container">
         <h2>Your Privacy, Guaranteed</h2>
         <p>Photoflare connects directly to YOUR PhotoPrism server. Your photos never pass through our servers. Your data stays yours, always.</p>
-    </div>
-</section>
-
-<!-- More Screenshots -->
-<section class="screenshots">
-    <div class="container">
-        <h2>More Screenshots</h2>
-        <div class="screenshot-gallery">
-            <div class="screenshot-item">
-                <img src="images/collections-light.webp" alt="Collections" class="screenshot-light">
-                <img src="images/collections-dark.webp" alt="Collections" class="screenshot-dark">
-                <p>Collections</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="images/collections-private-light.webp" alt="Private Collections" class="screenshot-light">
-                <img src="images/collections-private-dark.webp" alt="Private Collections" class="screenshot-dark">
-                <p>Private Collections</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="images/map-light.webp" alt="Map View" class="screenshot-light">
-                <img src="images/map-dark.webp" alt="Map View" class="screenshot-dark">
-                <p>Map View</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="images/photo-menu-light.webp" alt="Photo Menu" class="screenshot-light">
-                <img src="images/photo-menu-dark.webp" alt="Photo Menu" class="screenshot-dark">
-                <p>Photo Menu</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="images/settings.webp" alt="Settings">
-                <p>Settings</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="images/library-settings.webp" alt="Library Settings">
-                <p>Library Settings</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="images/edit-album.webp" alt="Edit Album">
-                <p>Edit Album</p>
-            </div>
-        </div>
     </div>
 </section>
 
