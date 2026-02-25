@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photoflare Auto Sync – automatically upload photos from your iPhone to PhotoPrism with camera roll detection, scheduled background fetches, and sync rules.">
+    <title>Auto Sync - Photoflare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">
+                    <img src="images/app-icon-light.webp" alt="Photoflare" class="icon-light">
+                    <img src="images/app-icon-dark.webp" alt="Photoflare" class="icon-dark">
+                </span>
+                <span>Photoflare</span>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <label for="menu-toggle" class="menu-overlay"></label>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Features</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="https://apps.apple.com/us/app/photoflare/id6502768925" target="_blank">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Auto Sync</h1>
+        <p>Keep your PhotoPrism server up to date automatically</p>
+    </div>
+</section>
+
+<section class="page-content">
+    <div class="container">
+
+        <h2>Two Ways to Sync</h2>
+        <p>Photoflare gives you two complementary ways to keep your photos backed up to your PhotoPrism server — one that responds to changes immediately, and one that runs on a schedule in the background.</p>
+
+        <h2>Camera Roll Detection</h2>
+        <p>When you open Photoflare, it checks your iPhone's camera roll for any new or changed photos since the last sync. If it finds new content, it uploads it automatically according to your sync rules — no manual action required. This also triggers whenever your photo library changes while the app is open.</p>
+        <p>This is the fastest way to get new photos onto your server. Take a photo, open Photoflare, and the upload starts immediately.</p>
+
+        <h2>Scheduled Background Fetches</h2>
+        <p>For hands-free syncing, you can schedule an unlimited number of background fetch times. At each scheduled time, iOS wakes Photoflare briefly in the background to run your sync rules — uploading any new photos without you needing to open the app.</p>
+
+        <div class="highlight-box">
+            <p>Background fetch is governed by iOS and is not guaranteed to run at the exact scheduled time. The system considers factors like battery level, network availability, and device usage patterns. In practice, schedules are a strong hint — but iOS has the final say on when background work actually runs.</p>
+        </div>
+
+        <h2>Sync Rules</h2>
+        <p>Both sync methods are powered by sync rules. Each rule specifies a source album on your device and a destination server (and optionally an album on that server). You can create as many rules as you need — for example, syncing your full camera roll to one server while sending a specific album to another.</p>
+        <p>When either sync method triggers, all active rules are evaluated and any new photos matching those rules are uploaded to the appropriate servers.</p>
+
+        <div class="detail-screenshots">
+            <div class="detail-screenshot-pair">
+                <div class="spotlight-media">
+                    <img src="images/settings-light.webp" alt="Photoflare – auto sync settings" class="spotlight-screenshot screenshot-light" loading="lazy">
+                    <img src="images/settings-dark.webp" alt="Photoflare – auto sync settings" class="spotlight-screenshot screenshot-dark" loading="lazy">
+                </div>
+                <p>Sync settings</p>
+            </div>
+            <div class="detail-screenshot-pair">
+                <div class="spotlight-media">
+                    <img src="images/auto-sync-schedule-light.webp" alt="Photoflare – scheduled background sync times" class="spotlight-screenshot screenshot-light" loading="lazy">
+                    <img src="images/auto-sync-schedule-dark.webp" alt="Photoflare – scheduled background sync times" class="spotlight-screenshot screenshot-dark" loading="lazy">
+                </div>
+                <p>Background schedule</p>
+            </div>
+            <div class="detail-screenshot-pair">
+                <div class="spotlight-media">
+                    <img src="images/multi-server-sync-rules-light.webp" alt="Photoflare – sync rules targeting different servers and albums" class="spotlight-screenshot screenshot-light" loading="lazy">
+                    <img src="images/multi-server-sync-rules-dark.webp" alt="Photoflare – sync rules targeting different servers and albums" class="spotlight-screenshot screenshot-dark" loading="lazy">
+                </div>
+                <p>Sync rules</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <ul class="footer-links">
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="https://github.com/kraetos10/photoflare_app/issues" target="_blank">Report a Bug</a></li>
+                <li><a href="https://apps.apple.com/us/app/photoflare/id6502768925" target="_blank">App Store</a></li>
+            </ul>
+            <p class="copyright">&copy; 2026 Photoflare. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

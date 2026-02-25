@@ -442,7 +442,7 @@ body {
 /* Detail Page Screenshot Gallery */
 .detail-screenshots {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 32px;
     margin: 40px 0;
 }
@@ -859,6 +859,7 @@ body {
     }
 
     .detail-screenshots {
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
 
