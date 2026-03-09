@@ -363,6 +363,19 @@ body {
     box-shadow: var(--shadow-card-hover);
 }
 
+.spotlight-screenshot-wide {
+    max-width: 480px;
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.spotlight-screenshot-wide:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-card-hover);
+}
+
 .spotlight-media .screenshot-light {
     display: block;
 }
@@ -854,6 +867,10 @@ body {
         max-width: 240px;
     }
 
+    .spotlight-screenshot-wide {
+        max-width: 400px;
+    }
+
     .spotlight-content h2 {
         font-size: 30px;
     }
@@ -1022,6 +1039,10 @@ body {
 
     .spotlight-screenshot {
         max-width: 200px;
+    }
+
+    .spotlight-screenshot-wide {
+        max-width: 300px;
     }
 
     .spotlight-content h2 {
@@ -1256,6 +1277,10 @@ body {
 
     .spotlight-screenshot {
         max-width: 180px;
+    }
+
+    .spotlight-screenshot-wide {
+        max-width: 260px;
     }
 
     .spotlight-content h2 {
